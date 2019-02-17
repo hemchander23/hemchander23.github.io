@@ -1,0 +1,43 @@
+# Site settings
+name: Hemchander S
+title: Hemchander S| Product Developer
+description: Value-driven product developer with an hands-on approach to architecting & building enterprise SaaS products.
+url: https://he.ms/
+baseurl: ""
+email: mail@he.ms
+cover: 
+logo: 
+resume: Hem-Resume.pdf
+social:
+  - title: email
+    url: mailto:mail@he.ms 
+  - title: twitter
+    url: https://twitter.com/hemchander23
+  - title: instagram
+    url: https://www.instagram.com/im.he.ms/
+  - title: github
+    url: https://github.com/hemchander23
+  - title: linkedin
+    url: https://www.linkedin.com/in/hems23/
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "*.gemspec"
+  - "README.md"
+  - "node_modules"
+  - "build"
+  - "gulpfile.js"
+  - "package.json"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap

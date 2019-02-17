@@ -1,0 +1,19 @@
+- name: Getsetstudy
+  url: http://getsetstudy.com
+  code: http://getsetstudy.com
+  description: Maintain study notes online
+  used: 
+    - thing: JavaScript
+    - thing: Elasticsearch
+    - thing: Node.js
+    - thing: python
+
+- name: SAP WebIDE Plugin - Markdown Preview
+  url: https://github.com/hemchander23/sapwebide_markdown_preview_plugin
+  code: https://github.com/hemchander23/sapwebide_markdown_preview_plugin
+  description: A markdown preview plugin written for SAP FullStack WebIDE
+  used:
+    - thing: Orion
+    - thing: Eclipse
+    - thing: markdown
+    - thing: javascript

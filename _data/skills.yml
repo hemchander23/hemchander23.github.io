@@ -1,0 +1,37 @@
+languages:
+  - item: Javascript
+  - item: SQL
+  - item: Python
+  - item: PHP
+  - item: Java
+  - item: R
+
+frameworks:
+  - item: Node.js
+  - item: Express.js
+  - item: Angular.js
+  - item: MongoDB
+  - item: D3.js
+  - item: Bootstrap(UI)
+  - item: SemanticUI
+  - item: Flask
+  - item: Django
+  - item: SAP UI5
+  - item: SAP HANA 2.0
+
+tools:
+  - item: SAP Cloud Platform - Cloudfoundry PaaS
+  - item: KNIME Analytics Platform
+  - item: Ludwig Machine Learning toolbox
+  - item: REST Client - Postman,SoapUI
+  - item: Mockup/ Prototyping - Adobe XD, draw.io
+  - item: Graphic design - Photoshop, After-Effects
+  - item: Requirement gathering
+  - item: Chrome DevTools, Extension development
+  - item: Docker
+  - item: Git, Jenkins
+
+design:
+  - item: Mockup/ Prototyping - Adobe XD, draw.io
+  - item: Graphic design - Photoshop, After-Effects
+  - item: Requirement gathering
