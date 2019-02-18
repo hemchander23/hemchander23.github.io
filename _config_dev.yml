@@ -1,12 +1,12 @@
 # Site settings
 name: Hemchander S
-title: Hemchander S| Product Developer
+title: Hemchander S | Product Developer
 description: Value-driven product developer with an hands-on approach to architecting & building enterprise SaaS products.
 url: https://he.ms/
 baseurl: ""
 email: mail@he.ms
 cover: 
-logo: 
+logo: https://he.ms/img/emojis/technologist.png
 resume: Hem-Resume.pdf
 social:
   - title: email

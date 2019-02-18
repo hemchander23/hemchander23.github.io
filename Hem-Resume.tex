@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://he.ms/}{\Large Hemchander S}} & Email : \href{mailto:mail@he.ms}{mail@he.ms}\\
+  \href{https://he.ms/}{https://he.ms} & Mobile : +91 9551835816 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Anna University}{Chennai, IN}
+      {Bachelor of Technology in Information Technology;  GPA: 7.9/10.0}{Aug. 2012 -- July. 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Kaar Technologies India Private Limited }{Chennai, IN}
+      {Product Developer,SAP Cloud Platform - COE}{October 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Innovation Request Repository, SAP Germany}
+          {Lead the development of feature request repository tool for SAP S/4 HANA Public Cloud ERP. Responsible for feature ideation, formulation of sprint plan and execution. The tool streamlines various business processes inside SAP and aids in decision-making during portfolio rounds. The tool is actively used by several teams inside SAP - ranging from developers to board members. It is built using the latest SAP Cloud Platform - Cloudfoundry version and integrates with several third-party tools (JIRA, Vault to name a few). Robust microservice-based SaaS architecture with UI5/Angular.js as the frontend, Node.js and Python as the application layer and multi-model HANA 2.0 database for in-memory store/analytics}
+
+        \resumeItem{Co-Innovation Customer Portal, SAP Germany}
+          {Customer facing portal developed to cater the needs of SAP co-innovation team. The portal houses analytical applications that offer insights on the innovation requests raised by the respective customer. Apart from the analytical capabilities, security is enforced on multiple levels right from database to UI. Two-Factor Authentication(2FA), Data Control Language(DCL) and JWT is used to enforce high security standards  }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Kaar Technologies India Private Limited }{Chennai, IN}
+      {Trainee, COE}{Jul 2016 - Oct 2017}
+      \resumeItemListStart
+        \resumeItem{eCAPEX Budgeting and Reporting tool - for a Leading Bank in Malaysia }
+          {Held interactive requirement gathering sessions with the stakeholders.Developed the data visualization and ETL components for eCAPEX budgeting and reporting using Angular,UI5,D3,HANA Flowgraphs on SAP Cloud Platform}
+        \resumeItem{Connected Healthcare(IoT) - Smart Insulin recommendation based on CGM}
+          {Coordinated the development of an IoT based Connected Healthcare system – Wireless CGM device integrated with an
+iOS App that provides insulin recommendations based on blood sugar level - part of SAP Co-Innovation R/D.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Freelancer}{Remote}
+      {Web designer/developer}{May 2014- Jul 2016}
+      \resumeItemListStart
+        \resumeItem{Design and Development}
+          {A consistent 5-star rated professional Website Designer and Developer.Skilled at requirement gathering and rapid implementations for startups and SMEs. Majority of the opportunities sourced by winning several design and development contests.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Javascript,SQL,Python,PHP,Java,R}
+    \resumeSubItem{Frameworks}
+      {Node.js,Express.js,Angular.js,MongoDB,D3.js,Bootstrap(UI),SemanticUI,Flask,Django,SAP UI5}
+    \resumeSubItem{Database}
+      {Multimodel DB - SAP HANA 2.0, NoSQL - MongoDB, Relational - PostgreSQL}
+    \resumeSubItem{Tools}
+      {SAP Cloud Platform - Cloudfoundry PaaS, KNIME Analytics Platform, Ludwig Machine Learning toolbox, REST Client - Postman,SoapUI,Chrome DevTools, Extension development,Docker,Git, Jenkins.}
+    \resumeSubItem{Design}
+    {Mockup/ Prototyping - Adobe XD, draw.io, Graphic design - Photoshop, After-Effects, Requirement gathering}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{SMCGS}
+      {The project offers
+an economical solution and a general architecture which could be followed to enable household device control
+through voice recognition or eye blinks.}
+    \resumeSubItem{Getsetstudy }
+      {An online educational website which contains a curated index of study materials and resources
+for Anna University students.}
+    \resumeSubItem{SAP WebIDE Plugins}
+      {Wrote few utility plugins for SAP WebIDE FullStack version. Includes markdown preview, hot reload and in-memory file serve plugins}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Achievements and Interests}
+  \resumeSubHeadingListStart
+   \item{
+      \textbf{Events}{: Runner up, Wayray Intl. Hackathon, Achiever Award}
+      \hfill
+      \textbf{Hobby}{: IOT projects,Blogging, Photography }
+    }
+  \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+%
+%
+%-------------------------------------------
+\end{document}
