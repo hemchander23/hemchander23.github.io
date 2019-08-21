@@ -1,7 +1,7 @@
 # Site settings
 name: Hemchander S
-title: Hemchander S | Product Developer
-description: Value-driven product developer with an hands-on approach to architecting & building enterprise SaaS products.
+title: Hemchander S | Senior Developer Advocate, Freshworks
+description: Hemchander is from the Developer Relations team at Freshworks and is actively involved in building a vibrant developer ecosystem. He loves writing code, making tutorials, giving talks and eating nachos. Location - Freshworks Chennai,India
 url: https://he.ms/
 baseurl: ""
 email: mail@he.ms
@@ -9,14 +9,14 @@ cover:
 logo: https://he.ms/img/emojis/technologist.png
 resume: Hem-Resume.pdf
 social:
-  - title: email
-    url: mailto:mail@he.ms
-  - title: instagram
-    url: https://www.instagram.com/im.he.ms/
-  - title: github
-    url: https://github.com/hemchander23
+  - title: twitter
+    url: https://twitter.com/HemSays
   - title: linkedin
     url: https://www.linkedin.com/in/hems23/
+  - title: github
+    url: https://github.com/hemchander23   
+  - title: instagram
+    url: https://www.instagram.com/im.he.ms/
 
 # Build settings
 markdown: kramdown
