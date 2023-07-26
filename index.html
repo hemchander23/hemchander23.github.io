@@ -1,56 +1,114 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="ico.png" />
+    <title>Sup! Hem here</title>
     <style>
+        @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300';
+
         body {
-            font-family: monospace, monospace;
+            font-family: 'Roboto Mono', monospace;
+            line-height: 200%;
             padding: 20px;
         }
 
-        span {
-            display: none;
-        }
-
-        ref {
+        .magic-link {
             cursor: pointer;
             border-bottom: solid 1px black;
+        }
+
+        .wave {
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+
+        a, .prank-link {
+            background: yellow;
+            text-decoration: none;
+            color: black;
+            border-bottom: dashed 1px black;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            10% {
+                transform: rotate(14deg);
+            }
+
+            20% {
+                transform: rotate(-8deg);
+            }
+
+            30% {
+                transform: rotate(14deg);
+            }
+
+            40% {
+                transform: rotate(-4deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+
+            60% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
     </style>
 </head>
 
-
 <body>
-    <div>
-        Yo! I am <ref data-target="work">Hem.</ref>
-        <span data-id="work">Alright, let me tell a bit more. I work as a Sr. Developer Advocate at Pipedrive. Does that
-            <ref data-target="whatilike">
-                interest</ref> you?
-        </span>
-        <span data-id="whatilike">Well, I make sure developers are successful in building what they want. I also love
-            <ref data-target="coding">coding</ref>, <ref data-target="photography">
-                photography</ref> and <ref data-target="social">hanging out</ref> with people. </span>
-        <span data-id="coding">I am a big fan of Node.js, Javascript. My tech stack is quite broad
-            though. I am more of generalist. I love building projects in AWS (Lambda, DynamoDB, API Gateway, SQS).
-        </span>
-        <span data-id="social">Let's connect via <a href="https://www.linkedin.com/in/hems23/"
-                target="_blank">LinkedIn</a>
-        </span>
-        <span data-id="photography">Not that I am a great photographer, I do have some good shots in my <a
-                href="https://www.instagram.com/im.he.ms/" target="_blank">Instagram</a> page.
-        </span>
+    <div id="content">
+        Yo! I'm
+        <span class="magic-link" onclick="appendBio('likes')">Hem</span> <span class="wave">👋</span>.
     </div>
-</body>
+    </div>
 
-<script>
-    let refs = document.querySelectorAll("ref");
-    for (let i = 0; i < refs.length; i++) {
-        refs[i].addEventListener("click", function (e) {
-            let t = e.target.dataset.target;
-            let t_e = document.querySelectorAll(`[data-id='${t}']`);
-            t_e[0].style.display = 'contents';
-        });
-    }
-</script>
+    <script>
+        const appendedBios = new Set();
+
+        const sections = {
+            work: `<span>I make sure developers are successful in building what they want.
+        I also love <span class='magic-link' onclick='appendBio("coding")'>building stuff (indie-hacking)</span>, <span class='magic-link' onclick='appendBio("photography")'>flying drones, taking pictures</span>, <span class='magic-link' onclick='appendBio("tvshows")'>watching sci-fi</span> and <span class='magic-link' onclick='appendBio("social")'>hanging out</span> with people. </span>`,
+            likes: `<span>Alright, let me tell you a bit more. I am quite an adventurous person and I work as a Sr. Developer Advocate at
+        Pipedrive. Does that  <span class='magic-link' onclick='appendBio("work")'>interest you</span>?</span> `,
+            coding: `<span><span class='magic-link' onclick='appendBio("writing")'>Big fan</span> of Node.js, Javascript. My tech stack is quite broad
+        though. I am more of generalist. I like building projects in AWS
+        (Lambda, DynamoDB, API Gateway, SQS). </span>`,
+            social: `<span>Learning from people and hearing what they have to say is something that I enjoy a lot. Let's connect via <a href="https://www.linkedin.com/in/hems23/" target="_blank"
+          > LinkedIn</a> or <a href="https://t.me/Carrots1000" target="_blank"
+          > Telegram</a> or <a href="https://twitter.com/HemSays" target="_blank"
+          > Twitter</a>. </span>`,
+            photography: `<span>Not that I am a great photographer, I do have some good shots in my <a href="https://www.instagram.com/im.he.ms/" target="_blank"
+          >Instagram</a> page. </span>`,
+            tvshows: `<span>Sci-Fi shows & movies like Westworld, Expanse, Dark, Blade Runner & Interstellar mesmerize me. It helps me think from a different perspective and escape reality! </span>`,
+            writing: `<span>Guess what? I also write and paint. You can check some of my work at <a href="https://dev.to/hem/" target="_blank"
+          >Dev.to</a> and the <span class='magic-link prank-link' onclick='appendBio("sketching")'>Louvre Museum</span>. </span>  </span>`,
+            sketching: `Lol, I was kidding about my stuff sitting in the Louvre. I am not that good. Although I must say I have mastered the art of drawing stick figures for now. `
+        };
+
+        function appendBio(bioSection) {
+            if (!appendedBios.has(bioSection)) {
+                const section = sections[bioSection];
+                const contentDiv = document.getElementById('content');
+                contentDiv.insertAdjacentHTML('beforeend', section);
+                appendedBios.add(bioSection);
+            }
+        }
+    </script>
+</body>
 
 </html>
